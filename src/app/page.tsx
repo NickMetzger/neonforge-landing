@@ -31,8 +31,8 @@ export default function LandingPage() {
     <main className="min-h-screen bg-black text-foreground">
       <Navbar />
       <div className="relative w-full px-6 pt-24 pb-32 text-center overflow-hidden">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tight glow-text">
-          NeonForge Launches <span className="text-primary">September 2025</span>
+        <h1 className="text-5xl md:text-6xl text-white glow font-bold tracking-tight glow-text">
+          NeonForge Launches <span className="text-white glow">September 2025</span>
         </h1>
         <p className="max-w-xl mx-auto mt-8 text-lg text-muted-foreground">
           Enter your email to get notified first and secure early access.
