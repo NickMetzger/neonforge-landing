@@ -8,7 +8,7 @@ export default function NavBar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <Link
           href="/"
-          className="text-xl font-semibold text-white tracking-tight hover:text-[#00f0ff] transition"
+          className="text-xl font-semibold text-white tracking-tight glow transition"
         >
           NeonForge
         </Link>

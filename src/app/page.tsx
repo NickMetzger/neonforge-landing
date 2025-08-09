@@ -5,6 +5,8 @@ import { supabase } from '../../lib/supabase';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import Navbar from '@/components/navbar'
+const DISCORD_URL =
+  process.env.NEXT_PUBLIC_DISCORD_URL || 'https://discord.gg/zPsS4C4t';
 
 export default function LandingPage() {
   const [email, setEmail] = useState('');
@@ -51,6 +53,23 @@ export default function LandingPage() {
         </form>
         {error && <p className="mt-4 text-red-500">{error}</p>}
       </div>
+      <footer className="border-t border-border/60 py-10">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 sm:flex-row sm:justify-between">
+          <p className="text-xs text-muted-foreground">
+            © {new Date().getFullYear()} NeonForge Network
+          </p>
+          <div className="flex items-center gap-4">
+           <a
+              href={DISCORD_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="text-xs text-muted-foreground hover:text-foreground"
+            >
+               Join us on Discord
+            </a>
+            </div>
+            </div>
+            </footer>
     </main>
   );
 }
